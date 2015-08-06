@@ -5,7 +5,7 @@ Basic Flask utility to run an IP range for pings with threading.
 
 TODO:
 
-* Make refresh Ajax
+* Make refresh Ajax (and use setTimeout() for continuous refresh)
 * Create config file to manage it.
 * Test on more OS's
 * Improve UI - Colors, sorting of results
