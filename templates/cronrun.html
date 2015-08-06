@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-orange.min.css" /> 
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+    </script>
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--overlay-drawer-button">
+  <div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">App Tools</span>
+  <nav class="mdl-navigation">
+    <!-- a class="mdl-navigation__link" href="/">Ping</a -->
+      <form action="{{ url_for('cronrun') }}">
+      <a class="mdl-navigation__link">
+      <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+       Refresh IP Feed 
+      </button>
+      </a>
+      </form>
+
+
+    <a class="mdl-navigation__link" href="#">App Layer (todo)</a>
+    <a class="mdl-navigation__link" href="#">Ref (todo)</a>
+  </nav>
+  </div>
+
+<main class="mdl-layout__content">
+  <p>{{res}}</p>
+  <div>{{ dump }}</div>
+</main>
+
+</body>
+
+</html>
